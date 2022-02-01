@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h1>DojoWeather</h1>
+            <ul class="citylist">
+                <li>
+                    <h2 onclick="navigate(this)">Burbank</h2>
+                </li>
+                <li>
+                    <h2 onclick="navigate(this)">Chicago</h2>
+                </li>
+                <li>
+                    <h2 onclick="navigate(this)">Dallas</h2>
+                </li>
+            </ul>
+        </div>
+        <div id="cityname">
+            <h1>San Jose</h1>
+            <div id="tempright">
+                <p>show temperature in </p>
+                <select name="temptype">
+                    <option value="C">°C</option>
+                    <option value="F">°F</option>
+                </select>
+            </div>
+        </div>
+        <div class="weatherday">
+            <section class="weatherboxes">
+                <h2>Today</h2>
+                <img src="./assets/some_rain.png" alt="some rain">
+                <h3>some rain</h3>
+                <ul id="temp1">
+                    <li id="maxtemp1">24°</li>
+                    <li id="mintemp1">18°</li>
+                </ul>
+            </section>
+            <section class="weatherboxes">
+                <h2>Tomorrow</h2>
+                <img src="./assets/some_sun.png" alt="some rain">
+                <h3>some sun</h3>
+                <ul id="temp2">
+                    <li id="maxtemp2">27°</li>
+                    <li id="mintemp2">19°</li>
+                </ul>
+            </section>
+            <section class="weatherboxes">
+                <h2>Friday</h2>
+                <img src="./assets/some_clouds.png" alt="some rain">
+                <h3>some clouds</h3>
+                <ul id="temp3">
+                    <li id="maxtemp3">21°</li>
+                    <li id="mintemp3">16°</li>
+                </ul>
+            </section>
+            <section class="weatherboxes">
+                <h2>Saturday</h2>
+                <img src="./assets/some_sun.png" alt="some rain">
+                <h3>some sun</h3>
+                <ul id="temp4">
+                    <li id="maxtemp4">26°</li>
+                    <li id="mintemp4">21°</li>
+                </ul>
+            </section>
+        </div>
+        <div id="cookie">
+            <img src="./assets/cookie.png" alt="cookie">
+            <div class="midrow">
+                <h4>Stop! Cookie Time</h4>
+                <p>We use cookies(sadly not the edible ones) to personalize content and ads, 
+                    to provide social media features and to analyze our traffic. <a href="#">Read More...</a></p>
+                </div>
+                <button onclick="closeCookie()">I accept</button>
+        </div>
+</body>
+
+</html>
